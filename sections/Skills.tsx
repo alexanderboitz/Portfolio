@@ -44,7 +44,7 @@ export function Skills() {
             <Card hover={false}>
               <div className="flex items-center gap-3">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-accent-soft text-accent">
-                  <Icon name="event" className="h-5 w-5" />
+                  <Icon name="branding" className="h-5 w-5" />
                 </div>
                 <h3 className="text-base font-semibold text-white">Sonstiges</h3>
               </div>

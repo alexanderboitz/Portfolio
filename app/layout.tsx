@@ -8,7 +8,9 @@ import "./globals.css";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
+  // Nur tatsächlich genutzte Schnitte laden (400/500/600/700/800) — spart
+  // eine WOFF2-Datei und beschleunigt v. a. das mobile Laden.
+  weight: ["400", "500", "600", "700", "800"],
   variable: "--font-montserrat",
   display: "swap",
 });
@@ -24,7 +26,7 @@ export const metadata: Metadata = {
     "Alexander Boitz",
     "Marketing Portfolio",
     "Grafikdesign",
-    "Eventmanagement",
+    "Webdesign",
     "Branding",
     "Social Media Marketing",
     "Content Creation",
@@ -70,7 +72,7 @@ const personJsonLd = {
     "Marketing",
     "Grafikdesign",
     "Branding",
-    "Eventmanagement",
+    "Webdesign",
     "Content Creation",
     "Social Media",
   ],

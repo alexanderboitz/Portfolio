@@ -25,7 +25,9 @@
         var(--bg-mid) 55%,
         var(--bg-black) 100%
       );
-    background-attachment: fixed;
+    /* Bewusst ohne background-attachment:fixed — das erzwingt auf vielen
+       mobilen Browsern ein Repaint bei jedem Scroll-Frame (Scroll-Jank).
+       Der Verlauf skaliert standardmäßig ohnehin auf die volle Seitenhöhe. */
     font-feature-settings: "ss01" on, "cv01" on;
   }
 

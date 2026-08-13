@@ -44,7 +44,7 @@ Bilder liegen in `public/images/…`, sprechend benannt nach Projekt. Neue Bilde
 
 ## Porträtfoto
 
-Liegt unter `public/images/profile/alexander-boitz.jpg` und wird in `sections/About.tsx` angezeigt. Der Bildausschnitt wird per `object-position` gesteuert — bei einem neuen Foto ggf. den Wert `object-[50%_22%]` in `About.tsx` anpassen. Der Hero-Bereich bleibt bewusst porträtfrei (typografisch, im Linear/Stripe-Register).
+Liegt unter `public/images/profile/alexander-boitz.jpg` und wird als rundes Porträt in `sections/Hero.tsx` angezeigt. Der Bildausschnitt wird per `object-position` gesteuert — bei einem neuen Foto ggf. den Wert `object-[50%_22%]` in `Hero.tsx` anpassen.
 
 ## Hinweis zu Bildgrößen
 

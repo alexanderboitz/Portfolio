@@ -11,7 +11,7 @@ export function ProjectGallery({ images }: { images: GalleryImage[] }) {
           className={index === 0 ? "col-span-2" : undefined}
         >
           <div
-            className={`group relative overflow-hidden rounded-2xl border border-surface-border ${
+            className={`group relative overflow-hidden rounded-2xl border border-surface-border bg-black/25 ${
               index === 0 ? "aspect-[16/9]" : "aspect-square"
             }`}
           >
@@ -19,8 +19,12 @@ export function ProjectGallery({ images }: { images: GalleryImage[] }) {
               src={image.src}
               alt={image.alt}
               fill
-              sizes="(min-width: 1024px) 45vw, 100vw"
-              className="object-cover transition-transform duration-700 ease-expo group-hover:scale-105"
+              sizes={
+                index === 0
+                  ? "(min-width: 1024px) 50vw, 100vw"
+                  : "(min-width: 1024px) 25vw, 50vw"
+              }
+              className="object-contain p-2 transition-transform duration-700 ease-expo group-hover:scale-105"
             />
           </div>
         </RevealItem>

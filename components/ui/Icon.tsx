@@ -4,7 +4,7 @@ export type IconName =
   | "branding"
   | "content"
   | "social"
-  | "event"
+  | "web"
   | "adobe"
   | "presentation"
   | "mail"
@@ -84,16 +84,15 @@ export function Icon({ name, className, strokeWidth = 1.6 }: IconProps) {
           <path d="M8.2 13.2 15.8 16.8" />
         </svg>
       );
-    case "event":
+    case "web":
       return (
         <svg {...common}>
-          <rect x="3" y="5" width="18" height="16" rx="2" />
-          <path d="M3 10h18" />
-          <path d="M8 3v4" />
-          <path d="M16 3v4" />
-          <path d="M8 14h.01" />
-          <path d="M12 14h.01" />
-          <path d="M16 14h.01" />
+          <rect x="3" y="4" width="18" height="16" rx="2" />
+          <path d="M3 9h18" />
+          <circle cx="6.5" cy="6.5" r="0.6" fill="currentColor" stroke="none" />
+          <circle cx="8.5" cy="6.5" r="0.6" fill="currentColor" stroke="none" />
+          <path d="M7 13.5h6" />
+          <path d="M7 16.5h4" />
         </svg>
       );
     case "adobe":

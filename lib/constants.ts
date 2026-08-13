@@ -1,9 +1,9 @@
 export const SITE = {
   name: "Alexander Boitz",
-  role: "Marketing · Eventmanagement · Grafikdesign",
+  role: "Marketing · Grafikdesign · Branding",
   title: "Alexander Boitz — Marketing & Grafikdesign Portfolio",
   description:
-    "Portfolio von Alexander Boitz: Marketing, Eventmanagement und Grafikdesign. Kampagnen, Branding und Content für Sport-, Event- und Unternehmenskunden.",
+    "Portfolio von Alexander Boitz: Marketing und Grafikdesign. Kampagnen, Branding, Content und Webdesign für Unternehmen aller Branchen.",
   url: "https://alexanderboitz.com",
   email: "alexander-boitz@outlook.de",
   locale: "de_DE",

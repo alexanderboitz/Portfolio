@@ -2,6 +2,8 @@ import Image from "next/image";
 import type { BrandingProject } from "@/lib/data";
 import { Reveal, RevealItem } from "@/components/ui/Reveal";
 import { ProjectIntro } from "./ProjectIntro";
+import { LaptopMockup } from "@/components/ui/LaptopMockup";
+import { cn } from "@/lib/utils";
 
 export function BrandingCaseStudy({ project }: { project: BrandingProject }) {
   return (
@@ -52,7 +54,12 @@ export function BrandingCaseStudy({ project }: { project: BrandingProject }) {
               {project.logos.map((logo) => (
                 <RevealItem key={logo.src}>
                   <div className="flex h-32 flex-col items-center justify-center gap-3 rounded-2xl border border-surface-border bg-surface p-5 transition-colors duration-300 hover:border-accent/30">
-                    <div className="relative h-14 w-full">
+                    <div
+                      className={cn(
+                        "relative h-14 w-full",
+                        logo.emphasize && "md:h-20"
+                      )}
+                    >
                       <Image
                         src={logo.src}
                         alt={logo.alt}
@@ -73,23 +80,8 @@ export function BrandingCaseStudy({ project }: { project: BrandingProject }) {
                 Webdesign
               </p>
             </Reveal>
-            <Reveal className="mt-4">
-              <div className="overflow-hidden rounded-2xl border border-surface-border bg-navy-mid shadow-card">
-                <div className="flex items-center gap-1.5 border-b border-surface-border bg-white/5 px-4 py-3">
-                  <span className="h-2.5 w-2.5 rounded-full bg-white/20" />
-                  <span className="h-2.5 w-2.5 rounded-full bg-white/20" />
-                  <span className="h-2.5 w-2.5 rounded-full bg-white/20" />
-                </div>
-                <div className="group relative aspect-[16/9] w-full overflow-hidden">
-                  <Image
-                    src={project.webdesign.src}
-                    alt={project.webdesign.alt}
-                    fill
-                    sizes="(min-width: 1024px) 55vw, 100vw"
-                    className="object-cover object-top transition-transform duration-700 ease-expo group-hover:scale-105"
-                  />
-                </div>
-              </div>
+            <Reveal className="mt-6">
+              <LaptopMockup src={project.webdesign.src} alt={project.webdesign.alt} />
             </Reveal>
           </div>
         </div>

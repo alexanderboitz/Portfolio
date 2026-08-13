@@ -10,17 +10,17 @@ import type { IconName } from "@/components/ui/Icon";
 export const hero = {
   eyebrow: "Portfolio",
   name: "Alexander Boitz",
-  roles: ["Marketing", "Eventmanagement", "Grafikdesign"],
+  roles: ["Marketing", "Grafikdesign"],
   claim:
-    "Ich entwickle Marken, Kampagnen und Erlebnisse — mit einem geschulten Blick fürs Detail und einem Gespür dafür, was Menschen wirklich bewegt.",
+    "Ich entwickle Marken, Kampagnen und visuelle Konzepte — mit einem geschulten Blick fürs Detail und einem Gespür dafür, was Menschen wirklich bewegt.",
 } as const;
 
 export const about = {
   eyebrow: "Über mich",
-  headline: "Vom Spielfeldrand ins Rampenlicht der Marken.",
+  headline: "Strategie trifft Gestaltung — das ist mein Antrieb.",
   paragraphs: [
-    "Mein Weg begann nicht am Schreibtisch, sondern auf dem Spielfeld: Mit dem Studium Sport & Event Management an der University of Applied Science Europe in Berlin habe ich früh gelernt, was eine Veranstaltung, eine Kampagne oder eine Marke wirklich bewegt — Menschen, Emotionen und der richtige Auftritt im richtigen Moment.",
-    "Diese Leidenschaft für Bewegung und Inszenierung habe ich ins Marketing getragen: Bei DEDO Media entwickelte ich Recruiting-Kampagnen für Steuerkanzleien, bei Ticketmaster verantwortete ich das Marketing für Sportkunden wie die European League of Football und produzierte vor Ort bei den European Championships 2022 in München Content für internationale Reichweite.",
+    "Mein Weg in Marketing und Design begann mit einer einfachen Beobachtung: Die besten Kampagnen entstehen dort, wo Strategie auf Gestaltung trifft. Genau dieses Zusammenspiel hat mich früh fasziniert — und wurde zum roten Faden meiner beruflichen Laufbahn.",
+    "Bei DEDO Media entwickelte ich Recruiting-Kampagnen für Steuerkanzleien und lernte, wie datenbasiertes Targeting und starkes visuelles Design zusammen messbare Ergebnisse erzielen. Bei Ticketmaster verantwortete ich anschließend das Marketing für namhafte Sportmarken — von der Kampagnenstrategie bis zur Content-Produktion für internationale Reichweite.",
     "Je mehr Kampagnen ich betreute, desto klarer wurde: Die eigentliche Faszination lag für mich immer in der Gestaltung selbst — in der Frage, wie eine Botschaft aussehen muss, damit sie wirkt. Im März 2023 habe ich diese Leidenschaft zum Beruf gemacht und bin als freiberuflicher Grafikdesigner in die Selbstständigkeit gestartet.",
     "Seitdem entwickle ich für Kunden aus unterschiedlichsten Branchen Corporate Designs, Logos, Verpackungen und Websites — strukturiert, markenorientiert und mit dem Anspruch, dass jedes Projekt genauso überzeugt wie die Idee dahinter.",
   ],
@@ -30,8 +30,8 @@ export const about = {
       text: "Weil eine gute Botschaft nur wirkt, wenn sie die richtigen Menschen erreicht — und genau das treibt mich an: Strategie und Kreativität zusammenzubringen.",
     },
     {
-      title: "Warum Events?",
-      text: "Weil Live-Momente Marken greifbar machen. Von der European League of Football bis zu den European Championships München habe ich erlebt, wie viel Energie in guter Organisation steckt.",
+      title: "Warum Branding?",
+      text: "Weil eine starke Marke mehr ist als ein Logo — sie ist die Summe aus Strategie, Design und Konsequenz in jedem Detail.",
     },
     {
       title: "Warum Design?",
@@ -78,10 +78,10 @@ export const competencies: Competency[] = [
       "Ansprechende Anzeigen und Beiträge, die Zielgruppen wirklich erreichen.",
   },
   {
-    icon: "event",
-    title: "Eventmanagement",
+    icon: "web",
+    title: "Webdesign",
     description:
-      "Planung und Umsetzung firmeneigener Events sowie Betreuung von Veranstaltern.",
+      "Websitegestaltung von der Konzeption bis zur launch-fertigen Umsetzung.",
   },
   {
     icon: "adobe",
@@ -136,7 +136,9 @@ export interface VideoProject extends BaseProject {
 export interface BrandingProject extends BaseProject {
   media: "branding";
   verpackung: GalleryImage[];
-  logos: { src: string; alt: string; name: string }[];
+  /** `emphasize` gibt hochformatigen Logos (z. B. Weber Consulting) am Desktop
+   *  mehr Höhe, damit sie neben breitformatigen Logos gleichwertig wirken. */
+  logos: { src: string; alt: string; name: string; emphasize?: boolean }[];
   webdesign: GalleryImage;
 }
 
@@ -248,7 +250,7 @@ export const projects: Project[] = [
     ],
     logos: [
       { src: "/images/branding/logos/spt-logo.png", alt: "Logo Sven Peterburs Transport GmbH", name: "Sven Peterburs Transport GmbH" },
-      { src: "/images/branding/logos/weber-consulting-logo.png", alt: "Logo Weber Consulting", name: "Weber Consulting" },
+      { src: "/images/branding/logos/weber-consulting-logo.png", alt: "Logo Weber Consulting", name: "Weber Consulting", emphasize: true },
       { src: "/images/branding/logos/vinelabs-logo.png", alt: "Logo VineLabs", name: "VineLabs" },
     ],
     webdesign: {
@@ -326,11 +328,13 @@ export interface ToolSkill {
 
 export const toolSkills: ToolSkill[] = [
   { name: "MS Office", level: "Hervorragende Kenntnisse", bar: 95 },
-  { name: "Slack", level: "Hervorragende Kenntnisse", bar: 95 },
-  { name: "Zoom", level: "Hervorragende Kenntnisse", bar: 95 },
   { name: "Adobe Photoshop", level: "Fortgeschrittene Kenntnisse", bar: 75 },
   { name: "Adobe Illustrator", level: "Fortgeschrittene Kenntnisse", bar: 75 },
   { name: "Adobe InDesign", level: "Fortgeschrittene Kenntnisse", bar: 75 },
+  { name: "Adobe Premiere Pro", level: "Expertenkenntnisse", bar: 100 },
+  { name: "Canva", level: "Expertenkenntnisse", bar: 100 },
+  { name: "Affinity", level: "Expertenkenntnisse", bar: 100 },
+  { name: "Claude", level: "Fortgeschrittene Kenntnisse", bar: 75 },
 ];
 
 export const languages = [

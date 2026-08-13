@@ -9,7 +9,7 @@ export function Footer() {
         <p>
           © {year} {SITE.name}. Alle Rechte vorbehalten.
         </p>
-        <p>Marketing · Eventmanagement · Grafikdesign</p>
+        <p>Marketing · Grafikdesign · Branding</p>
       </div>
     </footer>
   );
