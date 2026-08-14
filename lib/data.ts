@@ -331,14 +331,16 @@ export interface ToolSkill {
   bar: number;
 }
 
+// Sortiert nach Kenntnisstand absteigend, damit die Balken im Layout eine
+// ruhige, gleichmäßige Reihenfolge ergeben statt einer zufälligen Mischung.
 export const toolSkills: ToolSkill[] = [
+  { name: "Adobe Premiere Pro", level: "Expertenkenntnisse", bar: 100 },
+  { name: "Canva", level: "Expertenkenntnisse", bar: 100 },
+  { name: "Affinity", level: "Expertenkenntnisse", bar: 100 },
   { name: "MS Office", level: "Hervorragende Kenntnisse", bar: 95 },
   { name: "Adobe Photoshop", level: "Fortgeschrittene Kenntnisse", bar: 75 },
   { name: "Adobe Illustrator", level: "Fortgeschrittene Kenntnisse", bar: 75 },
   { name: "Adobe InDesign", level: "Fortgeschrittene Kenntnisse", bar: 75 },
-  { name: "Adobe Premiere Pro", level: "Expertenkenntnisse", bar: 100 },
-  { name: "Canva", level: "Expertenkenntnisse", bar: 100 },
-  { name: "Affinity", level: "Expertenkenntnisse", bar: 100 },
   { name: "Claude", level: "Fortgeschrittene Kenntnisse", bar: 75 },
 ];
 

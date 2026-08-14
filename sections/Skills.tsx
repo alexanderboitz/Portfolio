@@ -23,7 +23,7 @@ export function Skills() {
             </Card>
           </Reveal>
 
-          <Reveal delay={0.1} className="flex flex-col gap-6 lg:col-span-5">
+          <Reveal delay={0.1} className="flex h-full flex-col gap-6 lg:col-span-5">
             <Card hover={false}>
               <div className="flex items-center gap-3">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-accent-soft text-accent">
@@ -41,7 +41,7 @@ export function Skills() {
               </ul>
             </Card>
 
-            <Card hover={false}>
+            <Card hover={false} className="flex flex-1 flex-col">
               <div className="flex items-center gap-3">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-accent-soft text-accent">
                   <Icon name="branding" className="h-5 w-5" />
