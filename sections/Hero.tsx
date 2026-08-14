@@ -1,24 +1,15 @@
-"use client";
-
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { hero } from "@/lib/data";
 import { RESUME_PATH } from "@/lib/constants";
 import { Button } from "@/components/ui/Button";
 import { Icon } from "@/components/ui/Icon";
 
-const EASE = [0.16, 1, 0.3, 1] as const;
-
-const container = {
-  hidden: {},
-  visible: { transition: { staggerChildren: 0.12, delayChildren: 0.1 } },
-};
-
-const item = {
-  hidden: { opacity: 0, y: 28 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: EASE } },
-};
-
+/**
+ * Bewusst ohne Framer Motion: Der Hero ist der erste sichtbare Inhalt der
+ * Seite und läuft daher rein über CSS-Animationen (siehe tailwind.config.ts),
+ * die sofort beim Rendern starten statt erst nach dem Laden/Hydrieren des
+ * JS-Bundles. Das verbessert den Speed Index spürbar.
+ */
 export function Hero() {
   return (
     <section
@@ -33,28 +24,17 @@ export function Hero() {
       </span>
 
       <div className="container-page relative z-10 grid grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-8">
-        <motion.div
-          variants={container}
-          initial="hidden"
-          animate="visible"
-          className="order-2 lg:order-1 lg:col-span-7"
-        >
-          <motion.span variants={item} className="eyebrow">
+        <div className="order-2 lg:order-1 lg:col-span-7">
+          <span className="eyebrow animate-hero-fade-up [animation-delay:0ms]">
             <span className="h-px w-6 bg-accent" aria-hidden />
             {hero.eyebrow}
-          </motion.span>
+          </span>
 
-          <motion.h1
-            variants={item}
-            className="mt-6 text-balance text-[clamp(2.75rem,7vw,5.5rem)] font-extrabold leading-[0.98] tracking-tight text-white"
-          >
+          <h1 className="mt-6 animate-hero-fade-up text-balance text-[clamp(2.75rem,7vw,5.5rem)] font-extrabold leading-[0.98] tracking-tight text-white [animation-delay:60ms]">
             {hero.name}
-          </motion.h1>
+          </h1>
 
-          <motion.div
-            variants={item}
-            className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 text-[clamp(1.1rem,2.4vw,1.75rem)] font-medium text-ink2-secondary"
-          >
+          <div className="mt-6 flex animate-hero-fade-up flex-wrap items-center gap-x-4 gap-y-2 text-[clamp(1.1rem,2.4vw,1.75rem)] font-medium text-ink2-secondary [animation-delay:120ms]">
             {hero.roles.map((role, index) => (
               <span key={role} className="flex items-center gap-4">
                 {index > 0 && (
@@ -63,16 +43,13 @@ export function Hero() {
                 {role}
               </span>
             ))}
-          </motion.div>
+          </div>
 
-          <motion.p
-            variants={item}
-            className="mt-8 max-w-xl text-balance text-base leading-relaxed text-ink2-secondary md:text-lg"
-          >
+          <p className="mt-8 max-w-xl animate-hero-fade-up text-balance text-base leading-relaxed text-ink2-secondary [animation-delay:180ms] md:text-lg">
             {hero.claim}
-          </motion.p>
+          </p>
 
-          <motion.div variants={item} className="mt-11 flex flex-wrap items-center gap-4">
+          <div className="mt-11 flex animate-hero-fade-up flex-wrap items-center gap-4 [animation-delay:240ms]">
             <Button href="#projects" icon="arrowRight">
               Portfolio ansehen
             </Button>
@@ -82,15 +59,10 @@ export function Hero() {
             <Button href="#contact" variant="ghost" icon="arrowUpRight">
               Kontakt
             </Button>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.94 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.9, ease: EASE, delay: 0.15 }}
-          className="order-1 flex justify-center lg:order-2 lg:col-span-5 lg:justify-end"
-        >
+        <div className="order-1 flex animate-hero-fade-scale justify-center [animation-delay:100ms] lg:order-2 lg:col-span-5 lg:justify-end">
           <div className="relative h-56 w-56 sm:h-72 sm:w-72 lg:h-96 lg:w-96">
             <div
               aria-hidden
@@ -107,25 +79,19 @@ export function Hero() {
               />
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
 
-      <motion.a
+      <a
         href="#about"
         aria-label="Zur nächsten Sektion scrollen"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.1, duration: 0.8 }}
-        className="absolute bottom-10 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 text-ink2-tertiary transition-colors hover:text-accent md:flex"
+        className="absolute bottom-10 left-1/2 hidden -translate-x-1/2 animate-hero-fade-up flex-col items-center gap-2 text-ink2-tertiary transition-colors [animation-delay:400ms] hover:text-accent md:flex"
       >
         <span className="text-[10px] font-semibold uppercase tracking-[0.3em]">Scroll</span>
-        <motion.span
-          animate={{ y: [0, 6, 0] }}
-          transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
-        >
+        <span className="inline-block animate-bounce-soft">
           <Icon name="arrowDown" className="h-4 w-4" />
-        </motion.span>
-      </motion.a>
+        </span>
+      </a>
     </section>
   );
 }

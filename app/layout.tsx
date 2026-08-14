@@ -4,6 +4,7 @@ import { SITE } from "@/lib/constants";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { BackgroundFX } from "@/components/layout/BackgroundFX";
+import { PageLoader } from "@/components/layout/PageLoader";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -89,6 +90,7 @@ export default function RootLayout({
           // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
         />
+        <PageLoader />
         <a
           href="#home"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-accent focus:px-5 focus:py-2.5 focus:text-sm focus:font-semibold focus:text-white"
