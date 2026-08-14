@@ -53,7 +53,7 @@ export function BrandingCaseStudy({ project }: { project: BrandingProject }) {
             <Reveal stagger className="mt-4 grid grid-cols-3 gap-3">
               {project.logos.map((logo) => (
                 <RevealItem key={logo.src}>
-                  <div className="flex h-32 flex-col items-center justify-center gap-3 rounded-2xl border border-surface-border bg-black p-5 transition-colors duration-300 hover:border-accent/30">
+                  <div className="flex h-32 flex-col items-center justify-center gap-3 rounded-2xl border border-surface-border bg-navy-mid p-5 transition-colors duration-300 hover:border-accent/30">
                     <div
                       className={cn(
                         "relative h-14 w-full",

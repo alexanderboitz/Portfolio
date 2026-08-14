@@ -11,7 +11,7 @@ export function ProjectGallery({ images }: { images: GalleryImage[] }) {
           className={index === 0 ? "col-span-2" : undefined}
         >
           <div
-            className={`group relative overflow-hidden rounded-2xl border border-surface-border bg-black ${
+            className={`group relative overflow-hidden rounded-2xl border border-surface-border bg-navy-mid ${
               index === 0 ? "aspect-[16/9]" : "aspect-square"
             }`}
           >
