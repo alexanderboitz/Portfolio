@@ -4,7 +4,6 @@ import { SITE } from "@/lib/constants";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { BackgroundFX } from "@/components/layout/BackgroundFX";
-import { PageLoader } from "@/components/layout/PageLoader";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -83,24 +82,12 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="de" className={montserrat.variable} suppressHydrationWarning>
+    <html lang="de" className={montserrat.variable}>
       <body className="font-sans">
         <script
           type="application/ld+json"
           // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
-        />
-        <PageLoader />
-        <script
-          // Winziges, unbundled Inline-Script: schaltet den Loader aus,
-          // sobald die Seite wirklich vollständig geladen ist (window.load),
-          // mit 8s-Sicherheitsnetz falls "load" aus irgendeinem Grund nie
-          // feuert. Läuft unabhängig vom React-Bundle, also ohne Verzögerung.
-          // eslint-disable-next-line react/no-danger
-          dangerouslySetInnerHTML={{
-            __html:
-              "(function(){function d(){document.documentElement.classList.add('is-loaded');}if(document.readyState==='complete'){d();}else{window.addEventListener('load',d);}setTimeout(d,8000);})();",
-          }}
         />
         <a
           href="#home"

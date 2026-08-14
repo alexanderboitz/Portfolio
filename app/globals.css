@@ -45,18 +45,6 @@
   section {
     scroll-margin-top: 88px;
   }
-
-  /* Page-Loader: bleibt sichtbar, bis app/layout.tsx per Inline-Script die
-     Klasse "is-loaded" auf <html> setzt (window.load), dann weiches Ausblenden. */
-  #page-loader {
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
-  }
-  html.is-loaded #page-loader {
-    opacity: 0;
-    visibility: hidden;
-  }
 }
 
 @layer utilities {

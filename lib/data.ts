@@ -185,7 +185,7 @@ export const projects: Project[] = [
     company: "Ticketmaster GmbH",
     period: "04/2022 – 02/2023",
     summary:
-      "Bei Ticketmaster habe ich das Marketing für sämtliche Sportkunden, Vereine und Veranstaltungen verantwortet und firmeneigene Events organisiert, darunter die European League of Football in ihrer zweiten Saison.",
+      "Bei Ticketmaster habe ich das Marketing für sämtliche Sportkunden, Vereine und Veranstaltungen verantwortet, darunter die European League of Football in ihrer zweiten Saison, und zusätzlich firmeneigene Events organisiert.",
     challenge:
       "Vor dem Saisonstart sollte die European League of Football mit hochwertigem Content sichtbar werden, sowohl in der Football-Community als auch auf den firmeneigenen Kanälen.",
     solution:
