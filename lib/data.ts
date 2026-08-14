@@ -100,6 +100,11 @@ export const competencies: Competency[] = [
 export interface GalleryImage {
   src: string;
   alt: string;
+  /** "cover" füllt die Kachel komplett aus (kann Ränder anschneiden),
+   *  "contain" (Standard) zeigt das Bild immer vollständig, ggf. mit
+   *  dezentem Rand. Nur für Bilder setzen, bei denen ein Zuschnitt
+   *  optisch unproblematisch ist. */
+  fit?: "cover" | "contain";
 }
 
 export interface ProjectLink {
@@ -163,13 +168,13 @@ export const projects: Project[] = [
     tags: ["Meta Ads", "Social Recruiting", "Grafikdesign"],
     media: "gallery",
     gallery: [
-      { src: "/images/werbeanzeigen/ad-01.jpg", alt: "Recruiting-Anzeige für Steuerfachangestellte, Ausschreibung mit Fotomotiv" },
+      { src: "/images/werbeanzeigen/ad-01.jpg", alt: "Recruiting-Anzeige für Steuerfachangestellte, Ausschreibung mit Fotomotiv", fit: "cover" },
       { src: "/images/werbeanzeigen/ad-02.jpg", alt: "Meta-Ad-Kreation für eine Steuerkanzlei im Bewerbermarketing" },
       { src: "/images/werbeanzeigen/ad-03.jpg", alt: "Recruiting-Anzeige mit Call-to-Action 'Jetzt bewerben'" },
       { src: "/images/werbeanzeigen/ad-04.jpg", alt: "Werbeanzeige für die Kanzlei Kayser im Corporate Design" },
       { src: "/images/werbeanzeigen/ad-05.jpg", alt: "Social-Media-Anzeige für Bilanzbuchhalter (m/w/d)" },
-      { src: "/images/werbeanzeigen/ad-06.jpg", alt: "Alltax Recruiting-Kampagne, Anzeigenmotiv 1" },
-      { src: "/images/werbeanzeigen/ad-07.jpg", alt: "Alltax Recruiting-Kampagne, Anzeigenmotiv 2" },
+      { src: "/images/werbeanzeigen/ad-06.jpg", alt: "Alltax Recruiting-Kampagne, Anzeigenmotiv 1", fit: "cover" },
+      { src: "/images/werbeanzeigen/ad-07.jpg", alt: "Alltax Recruiting-Kampagne, Anzeigenmotiv 2", fit: "cover" },
     ],
   },
   {
@@ -194,7 +199,7 @@ export const projects: Project[] = [
     },
     media: "gallery",
     gallery: [
-      { src: "/images/sportmarketing/season-preview.jpg", alt: "Ticketmaster Season Preview 2022, Titelgrafik European League of Football" },
+      { src: "/images/sportmarketing/season-preview.jpg", alt: "Ticketmaster Season Preview 2022, Titelgrafik European League of Football", fit: "cover" },
       { src: "/images/sportmarketing/berlin-thunder.jpg", alt: "Season-Preview-Grafik Berlin Thunder" },
       { src: "/images/sportmarketing/frankfurt-galaxy.jpg", alt: "Season-Preview-Grafik Frankfurt Galaxy" },
       { src: "/images/sportmarketing/leipzig-kings.jpg", alt: "Season-Preview-Grafik Leipzig Kings" },
