@@ -11,7 +11,7 @@ export function Competencies() {
         <SectionHeading
           eyebrow="Kompetenzen"
           title="Ein Werkzeugkasten, der Strategie und Gestaltung verbindet."
-          description="Von der Kampagnenidee bis zum fertigen Design — jede Kompetenz ist durch reale Projekte belegt."
+          description="Von der Kampagnenidee bis zum fertigen Design: Jede dieser Kompetenzen steckt in echten Projekten, die ich umgesetzt habe."
         />
 
         <Reveal

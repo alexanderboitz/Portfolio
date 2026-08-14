@@ -91,17 +91,17 @@ export function Hero() {
           transition={{ duration: 0.9, ease: EASE, delay: 0.15 }}
           className="order-1 flex justify-center lg:order-2 lg:col-span-5 lg:justify-end"
         >
-          <div className="relative h-40 w-40 sm:h-52 sm:w-52 lg:h-72 lg:w-72">
+          <div className="relative h-56 w-56 sm:h-72 sm:w-72 lg:h-96 lg:w-96">
             <div
               aria-hidden
-              className="absolute -inset-6 rounded-full bg-accent/20 blur-[50px]"
+              className="absolute -inset-8 rounded-full bg-accent/20 blur-[60px]"
             />
-            <div className="relative h-full w-full overflow-hidden rounded-full ring-1 ring-accent/40 ring-offset-4 ring-offset-navy">
+            <div className="relative h-full w-full overflow-hidden rounded-full ring-1 ring-accent/40">
               <Image
                 src="/images/profile/alexander-boitz.jpg"
                 alt="Porträt von Alexander Boitz"
                 fill
-                sizes="(min-width: 1024px) 288px, (min-width: 640px) 208px, 160px"
+                sizes="(min-width: 1024px) 384px, (min-width: 640px) 288px, 224px"
                 priority
                 className="object-cover object-[50%_22%]"
               />

@@ -12,30 +12,30 @@ export const hero = {
   name: "Alexander Boitz",
   roles: ["Marketing", "Grafikdesign"],
   claim:
-    "Ich entwickle Marken, Kampagnen und visuelle Konzepte — mit einem geschulten Blick fürs Detail und einem Gespür dafür, was Menschen wirklich bewegt.",
+    "Ich entwickle Marken, Kampagnen und visuelle Konzepte mit einem geschulten Blick fürs Detail und einem Gespür dafür, was Menschen wirklich bewegt.",
 } as const;
 
 export const about = {
   eyebrow: "Über mich",
-  headline: "Strategie trifft Gestaltung — das ist mein Antrieb.",
+  headline: "Strategie trifft Gestaltung. Das treibt mich an.",
   paragraphs: [
-    "Mein Weg in Marketing und Design begann mit einer einfachen Beobachtung: Die besten Kampagnen entstehen dort, wo Strategie auf Gestaltung trifft. Genau dieses Zusammenspiel hat mich früh fasziniert — und wurde zum roten Faden meiner beruflichen Laufbahn.",
-    "Bei DEDO Media entwickelte ich Recruiting-Kampagnen für Steuerkanzleien und lernte, wie datenbasiertes Targeting und starkes visuelles Design zusammen messbare Ergebnisse erzielen. Bei Ticketmaster verantwortete ich anschließend das Marketing für namhafte Sportmarken — von der Kampagnenstrategie bis zur Content-Produktion für internationale Reichweite.",
-    "Je mehr Kampagnen ich betreute, desto klarer wurde: Die eigentliche Faszination lag für mich immer in der Gestaltung selbst — in der Frage, wie eine Botschaft aussehen muss, damit sie wirkt. Im März 2023 habe ich diese Leidenschaft zum Beruf gemacht und bin als freiberuflicher Grafikdesigner in die Selbstständigkeit gestartet.",
-    "Seitdem entwickle ich für Kunden aus unterschiedlichsten Branchen Corporate Designs, Logos, Verpackungen und Websites — strukturiert, markenorientiert und mit dem Anspruch, dass jedes Projekt genauso überzeugt wie die Idee dahinter.",
+    "Mein Weg in Marketing und Design begann mit einer einfachen Beobachtung: Die besten Kampagnen entstehen dort, wo Strategie auf Gestaltung trifft. Genau dieses Zusammenspiel hat mich schon früh fasziniert und ist bis heute der rote Faden meiner Laufbahn.",
+    "Bei DEDO Media habe ich Recruiting-Kampagnen für Steuerkanzleien entwickelt und dabei gelernt, wie datenbasiertes Targeting und starkes visuelles Design zusammen wirklich etwas bewegen. Danach habe ich bei Ticketmaster das Marketing für namhafte Sportmarken verantwortet, von der Kampagnenstrategie bis zur Content-Produktion für ein internationales Publikum.",
+    "Je mehr Kampagnen ich betreut habe, desto klarer wurde mir eins: Am meisten hat mich immer die Gestaltung selbst fasziniert, also die Frage, wie eine Botschaft aussehen muss, damit sie wirkt. Im März 2023 habe ich diese Leidenschaft zum Beruf gemacht und mich als Grafikdesigner selbstständig gemacht.",
+    "Seitdem entwickle ich für Kunden aus ganz unterschiedlichen Branchen Corporate Designs, Logos, Verpackungen und Websites. Mir ist dabei wichtig, strukturiert zu arbeiten, und dass am Ende jedes Projekt genauso überzeugt wie die Idee, die dahintersteckt.",
   ],
   pillars: [
     {
       title: "Warum Marketing?",
-      text: "Weil eine gute Botschaft nur wirkt, wenn sie die richtigen Menschen erreicht — und genau das treibt mich an: Strategie und Kreativität zusammenzubringen.",
+      text: "Weil eine gute Botschaft nur wirkt, wenn sie die richtigen Menschen erreicht. Genau das treibt mich an: Strategie und Kreativität zusammenzubringen.",
     },
     {
       title: "Warum Branding?",
-      text: "Weil eine starke Marke mehr ist als ein Logo — sie ist die Summe aus Strategie, Design und Konsequenz in jedem Detail.",
+      text: "Weil eine starke Marke mehr ist als nur ein Logo. Sie entsteht aus Strategie, Design und der Konsequenz, in jedem Detail dranzubleiben.",
     },
     {
       title: "Warum Design?",
-      text: "Weil Gestaltung die Sprache ist, in der ich am klarsten kommuniziere — vom ersten Logo-Entwurf bis zur fertigen Website.",
+      text: "Weil Gestaltung für mich die Sprache ist, in der ich am klarsten kommuniziere, vom ersten Logo-Entwurf bis zur fertigen Website.",
     },
   ],
 } as const;
@@ -51,49 +51,49 @@ export const competencies: Competency[] = [
     icon: "marketing",
     title: "Marketing",
     description:
-      "Kampagnenkonzeption, Meta Ads und datenbasiertes Targeting für messbare Ergebnisse.",
+      "Ich entwickle Kampagnen, schalte Meta Ads und nutze Daten, um die richtige Zielgruppe zu erreichen.",
   },
   {
     icon: "design",
     title: "Grafikdesign",
     description:
-      "Von Logo bis Layout: visuelle Konzepte, die eine klare Handschrift tragen.",
+      "Vom Logo bis zum Layout entwickle ich visuelle Konzepte mit einer klaren eigenen Handschrift.",
   },
   {
     icon: "branding",
     title: "Branding",
     description:
-      "Corporate Designs, die eine Marke konsistent und wiedererkennbar machen.",
+      "Ich baue Corporate Designs, die eine Marke konsistent und wiedererkennbar machen.",
   },
   {
     icon: "content",
     title: "Content Creation",
     description:
-      "Grafiken, Texte und Bewegtbild für Social Media, Blogs und Kampagnen.",
+      "Ich produziere Grafiken, Texte und Bewegtbild für Social Media, Blogs und Kampagnen.",
   },
   {
     icon: "social",
     title: "Social Media",
     description:
-      "Ansprechende Anzeigen und Beiträge, die Zielgruppen wirklich erreichen.",
+      "Ich gestalte Anzeigen und Beiträge, die Zielgruppen wirklich erreichen.",
   },
   {
     icon: "web",
     title: "Webdesign",
     description:
-      "Websitegestaltung von der Konzeption bis zur launch-fertigen Umsetzung.",
+      "Von der ersten Idee bis zur fertigen Seite begleite ich Websiteprojekte komplett.",
   },
   {
     icon: "adobe",
     title: "Adobe Creative Cloud",
     description:
-      "Photoshop, Illustrator und InDesign auf fortgeschrittenem Niveau.",
+      "Photoshop, Illustrator und InDesign nutze ich auf fortgeschrittenem Niveau.",
   },
   {
     icon: "presentation",
     title: "Präsentationsdesign",
     description:
-      "Überzeugende Keynotes und PowerPoint-Präsentationen für Kunden und Pitches.",
+      "Ich gestalte Keynotes und PowerPoint-Präsentationen, die bei Kunden und in Pitches überzeugen.",
   },
 ];
 
@@ -153,13 +153,13 @@ export const projects: Project[] = [
     company: "DEDO Media GmbH, Berlin",
     period: "04/2021 – 03/2022",
     summary:
-      "Meine erste berufliche Station nach dem Studium: Bei einer Berliner Agentur, spezialisiert auf Personalgewinnung für Steuerkanzleien, verantwortete ich die Erstellung und Schaltung von Werbeanzeigen in sozialen Netzwerken.",
+      "Nach dem Studium habe ich bei einer Berliner Agentur angefangen, die sich auf Personalgewinnung für Steuerkanzleien spezialisiert hat. Dort war ich für die Erstellung und Schaltung von Werbeanzeigen in sozialen Netzwerken verantwortlich.",
     challenge:
-      "Steuerkanzleien im gesamten Bundesgebiet suchten Fachkräfte in einem hart umkämpften Bewerbermarkt — austauschbare Stellenanzeigen erzielten kaum Resonanz.",
+      "Steuerkanzleien im ganzen Bundesgebiet suchten Fachkräfte in einem hart umkämpften Markt. Austauschbare Stellenanzeigen kamen dabei kaum an.",
     solution:
-      "Ich konzipierte und gestaltete Meta Ads mit starkem visuellem Fokus, kombinierte kreatives Grafikdesign mit datenbasiertem Targeting und sprach Fachkräfte im Steuerwesen gezielt an.",
+      "Ich habe Meta Ads mit starkem visuellem Fokus konzipiert und gestaltet und dabei kreatives Grafikdesign mit datenbasiertem Targeting kombiniert, um Fachkräfte im Steuerwesen gezielt anzusprechen.",
     result:
-      "Messbare Steigerung von Kampagnenleistung und Kundenzufriedenheit durch ansprechende, zielgruppengenaue Anzeigenkreationen.",
+      "Am Ende stand eine messbare Steigerung von Kampagnenleistung und Kundenzufriedenheit, dank Anzeigen, die genau bei der Zielgruppe ankamen.",
     tags: ["Meta Ads", "Social Recruiting", "Grafikdesign"],
     media: "gallery",
     gallery: [
@@ -180,9 +180,9 @@ export const projects: Project[] = [
     company: "Ticketmaster GmbH",
     period: "04/2022 – 02/2023",
     summary:
-      "Bei Ticketmaster verantwortete ich das Marketing sämtlicher Sportkunden, Vereine und Veranstaltungen sowie die Organisation firmeneigener Events — darunter die European League of Football in ihrer zweiten Saison.",
+      "Bei Ticketmaster habe ich das Marketing für sämtliche Sportkunden, Vereine und Veranstaltungen verantwortet und firmeneigene Events organisiert, darunter die European League of Football in ihrer zweiten Saison.",
     challenge:
-      "Die European League of Football sollte vor dem Saisonstart mit hochwertigem Content in der Football-Community und auf den firmeneigenen Kanälen sichtbar gemacht werden.",
+      "Vor dem Saisonstart sollte die European League of Football mit hochwertigem Content sichtbar werden, sowohl in der Football-Community als auch auf den firmeneigenen Kanälen.",
     solution:
       "Für die Vorberichterstattung entwickelte ich ansprechende Grafiken und Texte für den Ticketmaster-Sportblog und steuerte deren Distribution über Social-Media-Kanäle und relevante Football-Communities.",
     result:
@@ -209,9 +209,9 @@ export const projects: Project[] = [
     company: "Ticketmaster GmbH · Exklusivpartner",
     period: "August 2022",
     summary:
-      "Als Exklusivpartner der European Championships 2022 war Ticketmaster bei den Europameisterschaften in neun Sportarten vor Ort — von Tischtennis über Leichtathletik bis Volleyball.",
+      "Als Exklusivpartner der European Championships 2022 war Ticketmaster bei den Europameisterschaften in neun Sportarten vor Ort, von Tischtennis über Leichtathletik bis Volleyball.",
     challenge:
-      "Der Instagram-Kanal von Ticketmaster sollte authentisches Bild- und Videomaterial von der Veranstaltung zeigen — ohne dabei Wettkampfszenen zu nutzen, die aus rechtlichen Gründen nicht freigegeben waren.",
+      "Der Instagram-Kanal von Ticketmaster sollte authentisches Bild- und Videomaterial von der Veranstaltung zeigen, durfte dabei aber keine Wettkampfszenen nutzen, die aus rechtlichen Gründen nicht freigegeben waren.",
     solution:
       "Ich war vor Ort und produzierte Foto- und Videomaterial für Stories und Beiträge sowie ein Highlight-Video für den YouTube-Kanal, mit Fokus auf stimmungsvolle Publikumsimpressionen statt Wettkampfszenen.",
     result:
@@ -223,7 +223,7 @@ export const projects: Project[] = [
     },
     media: "video",
     youtubeId: "nVHQmqGC698",
-    videoTitle: "European Championships München — Highlight-Video",
+    videoTitle: "European Championships München: Highlight-Video",
   },
   {
     id: "branding",
@@ -233,11 +233,11 @@ export const projects: Project[] = [
     company: "Selbstständig",
     period: "seit 03/2023",
     summary:
-      "Im März 2023 habe ich meine Leidenschaft zum Beruf gemacht. Seitdem entwickle ich für Kunden unterschiedlicher Branchen Corporate Designs — von Logos über Verpackungen bis zu kompletten Webseiten.",
+      "Im März 2023 habe ich meine Leidenschaft zum Beruf gemacht. Seitdem entwickle ich für Kunden aus unterschiedlichen Branchen Corporate Designs, von Logos über Verpackungen bis zu kompletten Webseiten.",
     challenge:
-      "Jedes Kundenprojekt bringt eigene Anforderungen mit: von der Markenneugründung bis zum kompletten Web-Auftritt eines etablierten Unternehmens — wie zuletzt bei einem Baustofftransport-Unternehmen.",
+      "Jedes Kundenprojekt bringt eigene Anforderungen mit, von der Markenneugründung bis zum kompletten Web-Auftritt eines etablierten Unternehmens, wie zuletzt bei einem Baustofftransport-Unternehmen.",
     solution:
-      "Eigenständige Kundenakquise, Konzeption und Umsetzung: Ich entwickle Logos, Verpackungsdesigns und Präsentationen und übernehme bei Bedarf die komplette Webseitengestaltung — von der ersten Idee bis zur launch-fertigen Seite.",
+      "Ich kümmere mich selbst um Kundenakquise, Konzeption und Umsetzung: Ich entwickle Logos, Verpackungsdesigns und Präsentationen und übernehme bei Bedarf auch die komplette Webseitengestaltung, von der ersten Idee bis zur fertigen Seite.",
     result:
       "Mehrere abgeschlossene Markenauftritte, u. a. für Sven Peterburs Transport GmbH (komplettes Branding & Webdesign), Weber Consulting und VineLabs, sowie individuelle Verpackungslösungen wie den „Mein Finanzordner“ für Hauptstadt Finanz.",
     tags: ["Branding", "Logodesign", "Verpackungsdesign", "Webdesign"],
@@ -254,7 +254,7 @@ export const projects: Project[] = [
       { src: "/images/branding/logos/vinelabs-logo.png", alt: "Logo VineLabs", name: "VineLabs" },
     ],
     webdesign: {
-      src: "/images/branding/webdesign/spt-website.jpg",
+      src: "/images/branding/webdesign/spt-website.png",
       alt: "Website-Design für Sven Peterburs Transport GmbH, Startseite im Browser-Mockup",
     },
   },
@@ -347,5 +347,5 @@ export const drivingLicense = "Führerschein Klasse B";
 export const contact = {
   eyebrow: "Kontakt",
   headline: "Lass uns sprechen.",
-  text: "Ob neues Projekt, offene Position oder einfach ein Austausch über gute Gestaltung — ich freue mich auf deine Nachricht.",
+  text: "Ob neues Projekt, offene Position oder einfach ein Austausch über gute Gestaltung, ich freue mich auf deine Nachricht.",
 };
