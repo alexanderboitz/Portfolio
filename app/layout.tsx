@@ -83,7 +83,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="de" className={montserrat.variable}>
+    <html lang="de" className={montserrat.variable} suppressHydrationWarning>
       <body className="font-sans">
         <script
           type="application/ld+json"
@@ -91,6 +91,17 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
         />
         <PageLoader />
+        <script
+          // Winziges, unbundled Inline-Script: schaltet den Loader aus,
+          // sobald die Seite wirklich vollständig geladen ist (window.load),
+          // mit 8s-Sicherheitsnetz falls "load" aus irgendeinem Grund nie
+          // feuert. Läuft unabhängig vom React-Bundle, also ohne Verzögerung.
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{
+            __html:
+              "(function(){function d(){document.documentElement.classList.add('is-loaded');}if(document.readyState==='complete'){d();}else{window.addEventListener('load',d);}setTimeout(d,8000);})();",
+          }}
+        />
         <a
           href="#home"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-accent focus:px-5 focus:py-2.5 focus:text-sm focus:font-semibold focus:text-white"

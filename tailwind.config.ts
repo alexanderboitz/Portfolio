@@ -63,12 +63,6 @@ const config: Config = {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(6px)" },
         },
-        "loader-cycle": {
-          "0%": { opacity: "0" },
-          "8%": { opacity: "1" },
-          "75%": { opacity: "1" },
-          "100%": { opacity: "0", visibility: "hidden" },
-        },
       },
       // Reine CSS-Animationen: laufen sofort beim Painten, unabhängig davon,
       // wann das JS-Bundle geladen/hydriert ist. Wichtig für einen niedrigen
@@ -77,7 +71,6 @@ const config: Config = {
         "hero-fade-up": "hero-fade-up 0.6s cubic-bezier(0.16,1,0.3,1) both",
         "hero-fade-scale": "hero-fade-scale 0.7s cubic-bezier(0.16,1,0.3,1) both",
         "bounce-soft": "bounce-soft 1.8s ease-in-out 1s infinite",
-        "loader-cycle": "loader-cycle 0.8s ease forwards",
       },
     },
   },
